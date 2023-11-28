@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="formContainer">
+    <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" id="loginUsername" required>
+        <input type="password" placeholder="Password" id="loginPassword" required>
+        <button type="submit">Login</button>
+        <p>Not registered? <a href="#" onclick="toggleForms()">Create an account</a></p>
+    </form>
+
+    <form id="signupForm" style="display:none;">
+        <h2>Signup</h2>
+        <input type="text" placeholder="Username" id="signupUsername" required>
+        <input type="email" placeholder="Email" id="signupEmail" required>
+        <input type="password" placeholder="Password" id="signupPassword" required>
+        <button type="submit">Sign Up</button>
+        <p>Already registered? <a href="#" onclick="toggleForms()">Sign in</a></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+<script src="already_reg.js"></script>
+</body>
+</html>
